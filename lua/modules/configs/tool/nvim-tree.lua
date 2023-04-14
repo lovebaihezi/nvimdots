@@ -16,7 +16,7 @@ return function()
 		open_on_tab = false,
 		respect_buf_cwd = false,
 		sort_by = "name",
-		sync_root_with_cwd = true,
+		sync_root_with_cwd = false,
 		view = {
 			adaptive_size = false,
 			centralize_selection = false,
@@ -101,7 +101,7 @@ return function()
 		},
 		update_focused_file = {
 			enable = true,
-			update_root = true,
+			update_root = false,
 			ignore_list = {},
 		},
 		filters = {
