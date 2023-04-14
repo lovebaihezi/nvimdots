@@ -27,4 +27,9 @@ lang["chrisbra/csv.vim"] = {
 	lazy = true,
 	ft = "csv",
 }
+lang["ziglang/zig.vim"] = {
+    lazy = true,
+    ft = 'zig',
+    config = require('lang.zig')
+}
 return lang
