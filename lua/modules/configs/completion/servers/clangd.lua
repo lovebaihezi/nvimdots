@@ -38,7 +38,10 @@ return function(options)
 	require("lspconfig").clangd.setup({
 		on_attach = options.on_attach,
 		capabilities = vim.tbl_deep_extend("keep", { offsetEncoding = { "utf-16", "utf-8" } }, options.capabilities),
-		single_file_support = true,
+		single_file_support = false,
+        -- root_dir = function(name)
+        --     require("lspconfig.util").root_pattern("compile_commands.json","Makefile", "build.ninja", "CMakeList.txt",".git")(name)
+        -- end,
 		cmd = {
 			"clangd",
 			"-j=12",

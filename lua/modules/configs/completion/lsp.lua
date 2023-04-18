@@ -146,6 +146,11 @@ return function()
 		local final_opts = vim.tbl_deep_extend("keep", _opts, opts)
 		nvim_lsp.dartls.setup(final_opts)
 	end
+  if vim.fn.executable('zls') then
+    local _opts = require('completion.servers.zls')
+    local final_opts = vim.tbl_deep_extend('keep', _opts, opts)
+    nvim_lsp.zls.setup(final_opts)
+  end
 
 	vim.api.nvim_command([[LspStart]]) -- Start LSPs
 end

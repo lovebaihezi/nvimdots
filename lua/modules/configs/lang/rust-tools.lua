@@ -73,7 +73,7 @@ return function()
 				-- Backend used for displaying the graph
 				-- see: https://graphviz.org/docs/outputs/
 				-- default: x11
-				backend = "x11",
+				backend = "png",
 				-- where to store the output, nil for no output stored (relative
 				-- path from pwd)
 				-- default: nil
@@ -151,7 +151,11 @@ return function()
 		server = {
 			-- standalone file support
 			-- setting it to false may improve startup time
-			standalone = true,
+			standalone = false,
+            root_dir = function(name)
+                local utils = require("lspconfig.util")
+                return utils.root_pattern("Cargo.lock", ".git", "Cargo.toml")(name)
+            end
 		}, -- rust-analyer options
 
 		-- debugging stuff
