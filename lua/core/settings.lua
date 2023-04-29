@@ -6,7 +6,7 @@ settings["use_ssh"] = false
 
 -- Set it to false if there are no need to format on save.
 ---@type boolean
-settings["format_on_save"] = true
+settings["format_on_save"] = false
 
 -- Set it to false if the notification after formatting is annoying.
 ---@type boolean
@@ -50,7 +50,7 @@ settings["palette_overwrite"] = {}
 -- Set the colorscheme to use here.
 -- Available values are: `catppuccin`, `catppuccin-latte`, `catppucin-mocha`, `catppuccin-frappe`, `catppuccin-macchiato`, `edge`, `nord`.
 ---@type string
-settings["colorscheme"] = "catppuccin"
+settings["colorscheme"] = "nord"
 
 -- Set it to true if your terminal has transparent background.
 ---@type boolean
@@ -65,7 +65,7 @@ settings["background"] = "dark"
 -- Set the command for handling external URLs here. The executable must be available on your $PATH.
 -- This entry is IGNORED on Windows and macOS, which have their default handlers builtin.
 ---@type string
-settings["external_browser"] = "chrome-cli open"
+settings["external_browser"] = "xdg-open open"
 
 -- Filetypes in this list will skip lsp formatting if rhs is true.
 ---@type table<string, boolean>
