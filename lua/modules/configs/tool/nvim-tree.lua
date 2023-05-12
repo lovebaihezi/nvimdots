@@ -75,8 +75,8 @@ return function()
 						unstaged = icons.git.Mod_alt,
 						staged = icons.git.Add, --󰄬
 						unmerged = icons.git.Unmerged,
-						renamed = icons.git.Rename, --󰁔
-						untracked = icons.git.Untracked, -- "󰞋"
+						renamed = icons.git.Rename, 
+						untracked = icons.git.Untracked, -- "ﲉ"
 						deleted = icons.git.Remove, --
 						ignored = icons.git.Ignore, --◌
 					},

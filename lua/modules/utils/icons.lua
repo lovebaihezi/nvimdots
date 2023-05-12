@@ -34,11 +34,12 @@ local data = {
 		Value = "󰎠",
 		Variable = "",
 		-- ccls-specific icons.
-		TypeAlias = "",
-		Parameter = "",
-		StaticMethod = "",
+		TypeAlias = "",
+		Parameter = "󰫧",
+		StaticMethod = "󰊕",
 		Macro = "",
 	},
+    -- 
 	type = {
 		Array = "󰅪",
 		Boolean = "",
@@ -118,7 +119,7 @@ local data = {
 		Pencil = "󰏫",
 		Perf = "󰅒",
 		Play = "",
-		Project = "",
+		Project = "",
 		Right = "",
 		RootFolderOpened = "",
 		Search = "󰍉",

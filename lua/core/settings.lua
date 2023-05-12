@@ -50,7 +50,7 @@ settings["palette_overwrite"] = {}
 -- Set the colorscheme to use here.
 -- Available values are: `catppuccin`, `catppuccin-latte`, `catppucin-mocha`, `catppuccin-frappe`, `catppuccin-macchiato`, `edge`, `nord`.
 ---@type string
-settings["colorscheme"] = "nord"
+settings["colorscheme"] = "edge"
 
 -- Set it to true if your terminal has transparent background.
 ---@type boolean
@@ -87,7 +87,7 @@ settings["server_formatting_block_list"] = {
 ---@type string[]
 settings["lsp_deps"] = {
 	"bashls",
-	"clangd",
+	-- "clangd",
 	"html",
 	"jsonls",
 	"lua_ls",
