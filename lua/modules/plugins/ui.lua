@@ -46,11 +46,6 @@ ui["zbirenbaum/neodim"] = {
 	event = "LspAttach",
 	config = require("ui.neodim"),
 }
-ui["karb94/neoscroll.nvim"] = {
-	lazy = true,
-	event = { "CursorHold", "CursorHoldI" },
-	config = require("ui.neoscroll"),
-}
 ui["shaunsingh/nord.nvim"] = {
 	lazy = true,
 	config = require("ui.nord"),
@@ -64,11 +59,6 @@ ui["folke/paint.nvim"] = {
 	lazy = true,
 	event = { "CursorHold", "CursorHoldI" },
 	config = require("ui.paint"),
-}
-ui["dstein64/nvim-scrollview"] = {
-	lazy = true,
-	event = { "BufReadPost", "BufAdd", "BufNewFile" },
-	config = require("ui.scrollview"),
 }
 ui["edluffy/specs.nvim"] = {
 	lazy = true,

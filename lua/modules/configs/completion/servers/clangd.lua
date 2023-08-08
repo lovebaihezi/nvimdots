@@ -44,19 +44,18 @@ return function(options)
         -- end,
 		cmd = {
 			"clangd",
-			"-j=12",
 			"--enable-config",
 			"--background-index",
 			-- "--pch-storage=memory",
 			-- You MUST set this arg ↓ to your c/cpp compiler location (if not included)!
-			"--query-driver=" .. get_binary_path_list({ "clang++", "clang", "gcc", "g++" }),
+			"--query-driver=" .. get_binary_path_list({ "clang++", "clang", }),
 			"--clang-tidy",
 			"--all-scopes-completion",
 			"--completion-style=detailed",
 			"--header-insertion-decorators",
 			"--header-insertion=iwyu",
-			"--limit-references=3000",
-			"--limit-results=350",
+			-- "--limit-references=3000",
+			-- "--limit-results=350",
 		},
 		commands = {
 			ClangdSwitchSourceHeader = {

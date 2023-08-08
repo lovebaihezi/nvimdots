@@ -112,7 +112,7 @@ return function()
 		actions = {
 			use_system_clipboard = true,
 			change_dir = {
-				enable = true,
+				enable = false,
 				global = false,
 			},
 			open_file = {
