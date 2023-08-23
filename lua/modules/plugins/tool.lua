@@ -115,4 +115,8 @@ tool["mfussenegger/nvim-dap"] = {
 	},
 }
 
+tool ["ellisonleao/glow.nvim"] = {
+    config = true, cmd = "Glow"
+}
+
 return tool
